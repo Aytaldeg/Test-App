@@ -1,0 +1,258 @@
+$font: "Jost";
+$bold_font: "Jost-Bold";
+$regular_font: "Jost-Regular";
+
+@font-face {
+  font-family: "Jost";
+  src: url("../Assets/Fonts/Jost-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Jost-Bold";
+  src: url("../Assets/Fonts/Jost-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("../Assets/Fonts/Jost-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 101px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+  &-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &-logo {
+    display: flex;
+    &-text {
+      padding-left: 8px;
+      font-size: 43.75px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+
+  &-slider {
+    display: flex;
+    width: 270px;
+    background-color: #0c97f9;
+    font-size: 20px;
+    border-radius: 25px;
+    font-family: $font;
+    justify-content: space-between;
+    padding: 6px 12px;
+
+    &-button {
+      font-family: $font;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      &_active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 25px;
+        width: 120px;
+        height: 35px;
+      }
+    }
+  }
+
+  &-item {
+    font-size: 20px;
+    font-family: $font;
+    &_active {
+      font-size: 20px;
+      font-family: $bold_font;
+    }
+  }
+
+  &-log {
+    padding: 6px 20px;
+    font-size: 20px;
+    font-family: $font;
+    background-color: #0c97f9;
+    color: #fff;
+    border-radius: 37px;
+  }
+}
+
+.main {
+  height: 870px;
+  position: relative;
+  top: 101px;
+  background-color: #000000;
+
+  &-bgImage {
+    position: absolute;
+    background-image: url("./../Assets/background.png");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &-bgColor {
+    position: absolute;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-title {
+    padding-top: 180px;
+    font-size: 48px;
+    color: #fff;
+    font-family: $font;
+    text-transform: uppercase;
+  }
+
+  &-subtitle {
+    color: #bdbdbd;
+    font-size: 32px;
+    padding-top: 10px;
+    font-family: $font;
+  }
+
+  &-play {
+    padding-top: 140px;
+  }
+}
+
+.strategy {
+  height: 870px;
+  position: relative;
+  top: 101px;
+
+  &-bg {
+    font-family: $font;
+    font-size: 240px;
+    color: #0c97f9;
+    opacity: 0.1;
+    padding-top: 140px;
+    line-height: 180px;
+  }
+
+  &-text {
+    position: relative;
+    top: -50px;
+    font-family: $regular_font;
+    font-size: 36px;
+    width: 1296px;
+    margin: auto;
+    text-align: justify;
+  }
+}
+
+.retaily {
+  height: 870px;
+  position: relative;
+  top: 101px;
+
+  &-wrapper_str {
+    width: 1296px;
+    margin: auto;
+    position: relative;
+  }
+
+  &-bg {
+    font-family: $font;
+    font-size: 360px;
+    background-color: #7b757d;
+    color: #0c97f9;
+    opacity: 0.1;
+    padding-top: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-textp {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+
+  &-dots {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #0c97f9;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    border:4px solid #ffffff;
+    outline: solid 1px #0c97f9;
+
+  }
+
+  &-text {
+    font-family: $regular_font;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 550px;
+    margin-left: 55px;
+    text-align: left;
+    position: relative;
+    top: -80px;
+  }
+
+  &-img {
+    flex-grow: 1;
+  }
+
+  &-mac {
+    display: flex;
+    transform: translate(0, 280px);
+    margin-right: 130px;
+  }
+
+  &-smartphon {
+    display: flex-end;
+    transform: translate(0, -250px);
+    margin-left: 80px;
+  }
+}
