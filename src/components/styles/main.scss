@@ -256,3 +256,28 @@ $regular_font: "Jost-Regular";
     margin-left: 80px;
   }
 }
+
+.statistics {
+  height: 870px;
+  position: relative;
+  top: 101px;
+
+  &-title {
+    font-family: $font;
+    font-size: 240px;
+    color: #0c97f9;
+    opacity: 0.1;
+    padding-top: 140px;
+    line-height: 180px;
+  }
+
+  &-datas {
+    position: relative;
+    top: -50px;
+    font-family: $regular_font;
+    font-size: 36px;
+    width: 1296px;
+    margin: auto;
+    text-align: justify;
+  }
+}
