@@ -190,7 +190,7 @@ $regular_font: "Jost-Regular";
     text-transform: uppercase;
   }
 
-  &-data {
+  &-dataa {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -502,15 +502,16 @@ $regular_font: "Jost-Regular";
   &-content {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 20px;
     align-items: center;
     padding-left: 50px;
   }
 
-  &-rightSide {
+  &-rightSidee {
     width: 50%;
     display: flex;
     margin-right: 160px;
+    margin-top: 120px;
   }
 
   &-upsecond {
@@ -521,16 +522,17 @@ $regular_font: "Jost-Regular";
     margin-left: 40px;
   }
 
-  &-leftSide {
+  &-leftSidee {
     width: 50%;
     display: flex;
     margin-right: 120px;
+    margin-bottom: 70px;
   }
 
   &-upfirst {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 50px;
     margin-left: 40px;
   }
 
@@ -561,7 +563,7 @@ $regular_font: "Jost-Regular";
 
   &-straight {
     width: 1px;
-    height: 290px;
+    height: 280px;
     background-color: #0c97f9;
     margin-left: 15px;
   }

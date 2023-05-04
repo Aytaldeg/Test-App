@@ -5,7 +5,7 @@ function Statistics() {
         <div className="statistics-title">
           Сохраняйте время и деньги для вашего бизнеса
         </div>
-        <div className="statistics-data">
+        <div className="statistics-dataa">
           <div className="statistics-orders">
             <div className="statistics-text1">Оформляйте заявки</div>
             <div className="statistics-undertext">без лишних звонков</div>

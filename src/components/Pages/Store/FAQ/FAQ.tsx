@@ -4,7 +4,7 @@ function FAQ() {
       <div className="wrapper">
         <div className="faq-title">F.A.Q</div>
         <div className="faq-content">
-          <div className="faq-leftSide">
+          <div className="faq-leftSidee">
             <div className="faq-line">
               <div className="faq-dotup" />
               <div className="faq-straight" />
@@ -32,7 +32,7 @@ function FAQ() {
             </div>
           </div>
 
-          <div className="faq-rightSide">
+          <div className="faq-rightSidee">
             <div className="faq-line">
               <div className="faq-dotup" />
               <div className="faq-straight" />

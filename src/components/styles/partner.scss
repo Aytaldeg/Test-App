@@ -428,6 +428,7 @@ $regular_font: "Jost-Regular";
     width: 50%;
     display: flex;
     margin-right: 160px;
+    margin-top: 70px;
   }
 
   &-upsecond {
@@ -442,6 +443,7 @@ $regular_font: "Jost-Regular";
     width: 50%;
     display: flex;
     margin-right: 120px;
+    margin-top: 60px;
   }
 
   &-upfirst {
@@ -449,6 +451,11 @@ $regular_font: "Jost-Regular";
     flex-direction: column;
     gap: 120px;
     margin-left: 40px;
+  }
+
+  &-downfirst {
+    display: flex;
+    margin-top: 60px;
   }
 
   &-line {
