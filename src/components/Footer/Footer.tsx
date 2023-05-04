@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../styles/partner.scss";
 import apple from "../Assets/apple.png";
 import google from "../Assets/google.png";
 import qr from "../Assets/qr.png";

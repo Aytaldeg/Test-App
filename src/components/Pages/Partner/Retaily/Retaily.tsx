@@ -1,6 +1,6 @@
-import "../styles/main.scss";
-import Mac from "../Assets/Mac.png";
-import smartphon from "../Assets/smartphon.png";
+import "../../../styles/partner.scss";
+import Mac from "../../../Assets/Mac.png";
+import smartphon from "../../../Assets/smartphon.png";
 
 function Retaily() {
   return (

@@ -1,6 +1,5 @@
-import "../styles/main.scss";
-import play from "../Assets/play.png";
-import background from "../Assets/background.png";
+import "../../../styles/partner.scss";
+import play from "../../../Assets/play.png";
 
 function Main() {
   return (

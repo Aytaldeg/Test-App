@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../../../styles/partner.scss";
 
 function Strategy() {
   return (

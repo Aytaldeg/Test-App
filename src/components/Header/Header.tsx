@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../styles/partner.scss";
 import Vector from "../Assets/Vector.png";
 
 
