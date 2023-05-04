@@ -8,6 +8,7 @@ import Retaily from "./components/Retaily/Retaily";
 import Statistics from "./components/Statistics/Statistics";
 import Provider from "./components/Provider/Provider";
 import FAQ from "./components/FAQ/FAQ"
+import Feedback from "./components/Feedback/Feedback";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Statistics />
       <Provider />
       <FAQ />
+      <Feedback/>
     </div>
   );
 }
