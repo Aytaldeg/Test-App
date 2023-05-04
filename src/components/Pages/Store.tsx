@@ -9,9 +9,9 @@ import Provider from "../../components/Pages/Partner/Provider/Provider";
 import FAQ from "../../components/Pages/Partner/FAQ/FAQ";
 import Feedback from "../../components/Pages/Partner/Feedback/Feedback";
 
-function Partner() {
+function Store() {
   return (
-    <div className="Partner">
+    <div className="Store">
       <Main />
       <Strategy />
       <Retaily />
@@ -23,4 +23,4 @@ function Partner() {
   );
 }
 
-export default Partner;
+export default Store;
