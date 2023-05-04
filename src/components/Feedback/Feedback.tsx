@@ -6,7 +6,7 @@ function Feedback() {
       <div className="feedback-bg" />
       <div className="wrapper">
         <div className="feedback-content">
-          <div className="feedback-title">ПИШИТЕ ПО ВСЕМ ВОПРОСАМ</div>
+          <div className="feedback-title">ПИШИТЕ <br /> ПО ВСЕМ <br /> ВОПРОСАМ</div>
           <div className="feedback-form">
             <div className="feedback-input">
               <div className="feedback-fio">ФИО</div>
