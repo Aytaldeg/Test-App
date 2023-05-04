@@ -1,4 +1,4 @@
-import Mac from "../../../Assets/Mac.png";
+import Mac2 from "../../../Assets/Mac2.png";
 import smartphon from "../../../Assets/smartphon.png";
 
 function Retaily() {
@@ -11,46 +11,39 @@ function Retaily() {
             <div className="retaily-item">
               <div className="retaily-dot" />
               <div className="retaily-text">
-                Система приема и обработки заявок на поставку товаров для
-                торговых точек
+                Полный каталог продукции по ценам производителей
               </div>
             </div>
             <div className="retaily-item">
               <div className="retaily-dot" />
-              <div className="retaily-text">
-                Личный кабинет поставщика на портале retaily.online
-              </div>
+              <div className="retaily-text">Без ожидания ответа диспетчера</div>
             </div>
             <div className="retaily-item">
               <div className="retaily-dot" />
               <div className="retaily-text">
-                Онлайн-заключение договоров поставок с контрагентами
+                Push-уведомления (с нами полки всегда заполнены)
               </div>
             </div>
             <div className="retaily-item">
               <div className="retaily-dot" />
-              <div className="retaily-text">
-                Кастомизация цены и категории товаров для отдельных контрагентов
-              </div>
+              <div className="retaily-text">Сохранение истории заявок</div>
             </div>
             <div className="retaily-item">
               <div className="retaily-dot" />
               <div className="retaily-text">
-                Возможность показать в формате сториз акции, новинки, другую
-                полезную информацию
+                Онлайн мониторинг статуса вашей заявки (принят, отгружается и
+                др.)
               </div>
             </div>
             <div className="retaily-item">
               <div className="retaily-dot" />
-              <div className="retaily-text">
-                Возможность размещения рекламных баннеров на главной странице
-              </div>
+              <div className="retaily-text">Контроль закупок</div>
             </div>
           </div>
 
           <div className="retaily-img">
             <div className="retaily-mac">
-              <img src={Mac} />
+              <img src={Mac2} />
             </div>
 
             <div className="retaily-smartphon">

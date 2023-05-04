@@ -1,4 +1,3 @@
-import "../../../styles/partner.scss";
 import play from "../../../Assets/play.png";
 
 function Main() {

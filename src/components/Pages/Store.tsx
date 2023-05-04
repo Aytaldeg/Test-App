@@ -1,13 +1,13 @@
 import "../../App.css";
-import "../../components/styles/partner.scss";
-import "../../components/styles/main.scss";
-import Main from "../../components/Pages/Partner/Main/Main";
-import Strategy from "../../components/Pages/Partner/Strategy/Strategy";
-import Retaily from "../../components/Pages/Partner/Retaily/Retaily";
-import Statistics from "../../components/Pages/Partner/Statistics/Statistics";
-import Provider from "../../components/Pages/Partner/Provider/Provider";
-import FAQ from "../../components/Pages/Partner/FAQ/FAQ";
-import Feedback from "../../components/Pages/Partner/Feedback/Feedback";
+import "../../components/styles/store.scss";
+import Main from "../../components/Pages/Store/Main/Main";
+import Strategy from "../../components/Pages/Store/Strategy/Strategy";
+import Retaily from "../../components/Pages/Store/Retaily/Retaily";
+import Statistics from "../../components/Pages/Store/Statistics/Statistics";
+import Provider from "../../components/Pages/Store/Provider/Provider";
+import Download from "../../components/Pages/Store/Download/Download";
+import FAQ from "../../components/Pages/Store/FAQ/FAQ";
+import Feedback from "../../components/Pages/Store/Feedback/Feedback";
 
 function Store() {
   return (
@@ -17,6 +17,7 @@ function Store() {
       <Retaily />
       <Statistics />
       <Provider />
+      <Download />
       <FAQ />
       <Feedback />
     </div>
