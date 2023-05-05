@@ -16,8 +16,7 @@ function JobRules() {
             </div>
             <div className="rules-ftext">
               <div className="rules-text">
-                Правила сервиса «Ретейли»
-                <br /> (редакция от 05 апреля 2022 г.)
+                Правила сервиса «Ретейли»<br/> (редакция от 05 апреля 2022 г.)
               </div>
               <div className="rules-text">
                 1. Термины и определения

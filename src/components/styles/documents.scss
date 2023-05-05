@@ -104,6 +104,17 @@ $black_font: "Jost-Black";
     position: relative;
     right: 80px;
   }
+
+  &-activeb {
+  }
+
+  &-buttonactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: 72px;
+  }
 }
 
 .rules {
