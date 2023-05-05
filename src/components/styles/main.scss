@@ -106,6 +106,7 @@ $regular_font: "Jost-Regular";
   height: 810px;
   position: relative;
   top: 101px;
+  z-index: 3;
 
   &-bg {
     background-color: #0c97f9;
