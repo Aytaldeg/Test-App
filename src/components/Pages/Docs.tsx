@@ -6,8 +6,8 @@ import JobRules from "./Documents/JobRules";
 function Docs() {
   return (
     <div className="Docs">
-      {/* <Documents /> */}
-      <JobRules />
+      <Documents />
+      {/* <JobRules /> */}
     </div>
   );
 }
