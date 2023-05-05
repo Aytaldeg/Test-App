@@ -10,7 +10,7 @@ function FAQ() {
               <div className="faq-straight" />
               <div className="faq-dotdown" />
             </div>
-            <div className="faq-upfirst">
+            <div className="faq-upfirste">
               <div className="faq-ftext">
                 <div className="faq-titletext">Как работает Retaily?</div>
                 <div className="faq-text">
