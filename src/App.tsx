@@ -1,11 +1,13 @@
 import "./App.css";
+import { useState } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Partner from "./components/Pages/Partner";
 import Store from "./components/Pages/Store";
 import About from "./components/Pages/About";
 import Footer from "./components/Footer/Footer";
-import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Docs from "./components/Pages/Docs";
+import Vacancies from "./components/Pages/Vacancies";
 
 function App() {
   const [isSwitched, setIsSwitched] = useState<boolean>(false);
@@ -17,9 +19,17 @@ function App() {
     },
     {
       path: "/about",
-      element: (
-        <About />
-      ),
+      element: <About />,
+    },
+
+    {
+      path: "/documents",
+      element: <Docs />,
+    },
+
+    {
+      path: "/jobs",
+      element: <Vacancies />,
     },
   ]);
 
