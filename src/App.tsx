@@ -8,6 +8,7 @@ import About from "./components/Pages/About";
 import Footer from "./components/Footer/Footer";
 import Docs from "./components/Pages/Docs";
 import Vacancies from "./components/Pages/Vacancies";
+import Contacts from "./components/Pages/Contacts";
 
 function App() {
   const [isSwitched, setIsSwitched] = useState<boolean>(false);
@@ -30,6 +31,11 @@ function App() {
     {
       path: "/jobs",
       element: <Vacancies />,
+    },
+
+    {
+      path: "/contacts",
+      element: <Contacts />,
     },
   ]);
 
