@@ -47,10 +47,12 @@ $regular_font: "Jost-Regular";
   &-logo {
     display: flex;
     &-text {
-      padding-left: 8px;
+      padding-left: 4px;
       font-size: 43.75px;
       line-height: 24px;
       font-weight: bold;
+      color: #000;
+      text-decoration: none;
     }
   }
 
@@ -86,9 +88,13 @@ $regular_font: "Jost-Regular";
   &-item {
     font-size: 20px;
     font-family: $font;
+    text-decoration: none;
+    color: #000;
     &_active {
       font-size: 20px;
-      font-family: $bold_font;
+      font-family: $font;
+      text-decoration: none;
+      color: #000;
     }
   }
 
@@ -99,6 +105,7 @@ $regular_font: "Jost-Regular";
     background-color: #0c97f9;
     color: #fff;
     border-radius: 37px;
+    text-decoration: none;
   }
 }
 

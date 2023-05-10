@@ -3,6 +3,7 @@ import React, { ReactElement } from "react";
 import ReactDOM from "react-dom";
 import "../../styles/modal.scss";
 import Modal from "./Modal";
+import Sidebar from "../../Sidebar/Sidebar";
 
 function Documents() {
   const [isModal, setModal] = React.useState(false);
@@ -13,12 +14,7 @@ function Documents() {
       <div className="documents-bg" />
       <div className="wrapper">
         <div className="documents-main">
-          <div className="documents-sidepanel">
-            <div>О компании</div>
-            <div className="documents-active">Документы</div>
-            <div>Вакансии</div>
-            <div>Контакты</div>
-          </div>
+          <Sidebar />
           <div className="documents-content">
             <div className="documents-title">Документы</div>
             <div className="documents-info">

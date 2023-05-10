@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Partner from "./components/Pages/Partner";
 import Store from "./components/Pages/Store";
@@ -13,42 +13,24 @@ import Contacts from "./components/Pages/Contacts";
 function App() {
   const [isSwitched, setIsSwitched] = useState<boolean>(false);
 
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: isSwitched ? <Partner /> : <Store />,
-    },
-    {
-      path: "/about",
-      element: <About />,
-    },
-
-    {
-      path: "/documents",
-      element: <Docs />,
-    },
-
-    {
-      path: "/jobs",
-      element: <Vacancies />,
-    },
-
-    {
-      path: "/contacts",
-      element: <Contacts />,
-    },
-  ]);
-
   let toggle = () => {
     setIsSwitched(!isSwitched);
   };
 
   return (
-    <div className="App">
-      <Header isSwitched={isSwitched} toggled={toggle} />
-      <RouterProvider router={router} />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header isSwitched={isSwitched} toggled={toggle} />
+        <Routes>
+          <Route path="/" element={isSwitched ? <Partner /> : <Store />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/documents" element={<Docs />} />
+          <Route path="/jobs" element={<Vacancies />} />
+          <Route path="/contacts" element={<Contacts />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

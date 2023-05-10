@@ -1,15 +1,12 @@
+import Sidebar from "../../Sidebar/Sidebar";
+
 function Jobs() {
   return (
     <div className="jobs">
       <div className="jobs-bg" />
       <div className="wrapper">
         <div className="jobs-main">
-          <div className="jobs-sidepanel">
-            <div>О компании</div>
-            <div>Документы</div>
-            <div className="jobs-active">Вакансии</div>
-            <div>Контакты</div>
-          </div>
+          <Sidebar />
           <div className="jobs-content">
             <div className="jobs-title">Вакансии</div>
             <div className="jobs-contents">

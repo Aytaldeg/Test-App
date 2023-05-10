@@ -5,19 +5,15 @@ import starostin from "../../Assets/starostin.png";
 import bolshakov from "../../Assets/bolshakov.png";
 import sedalishev from "../../Assets/sedalishev.png";
 import popov from "../../Assets/popov.png";
+import Sidebar from "../../Sidebar/Sidebar";
 
 function AboutCompany() {
   return (
     <div className="about">
       <div className="about-bg"></div>
       <div className="wrapper">
+        <Sidebar />
         <div className="about-main">
-          <div className="about-sidepanel">
-            <div className="about-active">О компании</div>
-            <div>Документы</div>
-            <div>Вакансии</div>
-            <div>Контакты</div>
-          </div>
           <div className="about-content">
             <div className="about-title">О компании</div>
             <div className="about-photo">

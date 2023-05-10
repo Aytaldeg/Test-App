@@ -1,15 +1,12 @@
+import Sidebar from "../../Sidebar/Sidebar";
+
 function Contact() {
   return (
     <div className="contacts">
       <div className="contacts-bg" />
       <div className="wrapper">
         <div className="contacts-main">
-          <div className="contacts-sidepanel">
-            <div>О компании</div>
-            <div>Документы</div>
-            <div>Вакансии</div>
-            <div className="contacts-active">Контакты</div>
-          </div>
+          <Sidebar />
           <div className="contacts-content">
             <div className="contacts-title">Контакты</div>
             <div className="contacts-contents">
