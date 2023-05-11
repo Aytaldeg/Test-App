@@ -16,8 +16,8 @@ function Partner() {
       <Retaily />
       <Statistics />
       <Provider />
-      <FAQ />
-      <Feedback />
+      {/* <FAQ />
+      <Feedback /> */}
     </div>
   );
 }

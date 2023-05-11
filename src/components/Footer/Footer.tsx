@@ -53,7 +53,7 @@ function Footer() {
                     <div className="footer-appstore">
                       <img src={apple} />
                     </div>
-                    <div className="footer-qr">
+                    <div className="footer-pqr">
                       <img src={qr} />
                     </div>
                   </div>
