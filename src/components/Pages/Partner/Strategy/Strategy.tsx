@@ -1,6 +1,6 @@
 function Strategy() {
   return (
-    <div className="pstrategy">
+    <div className="pstrategy" id="strategy">
       <div className="wrapper">
         <div className="pstrategy-bg">СТРАТЕГИЯ</div>
         <div className="pstrategy-text">

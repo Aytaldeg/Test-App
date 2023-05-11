@@ -370,7 +370,6 @@ $regular_font: "Jost-Regular";
       justify-content: center;
       margin-top: 200px;
       gap: 20px;
-      opacity: 0.5;
       font-size: 20px;
       font-family: $regular_font;
       text-align: start;
@@ -408,6 +407,26 @@ $regular_font: "Jost-Regular";
   @media (max-width: 1200px) {
     &-tsecond {
       color: #ffffff;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &-pqr {
+      position: relative;
+      right: 27px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &-firstext {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &-tfirst {
+      opacity: 0.5;
     }
   }
 }

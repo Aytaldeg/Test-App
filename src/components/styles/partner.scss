@@ -21,6 +21,10 @@ $regular_font: "Jost-Regular";
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .pmain {
   @media (max-width: 1200px) {
     height: 1424px;
@@ -47,7 +51,7 @@ $regular_font: "Jost-Regular";
   }
   &-bgImage {
     position: absolute;
-    background-image: url("./../Assets/tbackground.png");
+    background-image: url("./../Assets/background.png");
     top: 0;
     left: 0;
     right: 0;
@@ -960,7 +964,7 @@ $regular_font: "Jost-Regular";
     width: 50%;
     display: flex;
     margin-right: 160px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   &-upsecond {
@@ -981,7 +985,7 @@ $regular_font: "Jost-Regular";
   &-upfirst {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 60px;
     margin-left: 40px;
   }
 
@@ -1044,10 +1048,125 @@ $regular_font: "Jost-Regular";
   }
 }
 
-.feedback {
+.pfeedback {
   height: 870px;
   position: relative;
   top: 101px;
+
+  @media (max-width: 1200px) {
+    height: 1170px;
+    position: relative;
+    top: 101px;
+  }
+
+  @media (max-width: 1200px) {
+    .pfeedback {
+      &-bg {
+        background-color: #7b757d;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        padding-top: 200px;
+        justify-content: center;
+      }
+
+      &-title {
+        font-size: 72px;
+        font-family: $font;
+        text-align: left;
+        padding-bottom: 40px;
+        position: relative;
+        width: 700px;
+      }
+
+      &-form {
+        width: 900px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 160px;
+      }
+
+      &-input {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 24;
+        opacity: 0.5;
+        font-family: $regular_font;
+      }
+
+      &-fio {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 20px;
+      }
+
+      &-mail {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 20px;
+      }
+
+      &-company {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 20px;
+      }
+
+      &-link {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 20px;
+      }
+
+      &-agreement {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        font-size: 24;
+      }
+
+      &-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #0c97f9;
+        border-radius: 50%;
+        position: relative;
+        border: 4px solid #ffffff;
+        outline: solid 1px #0c97f9;
+        margin-top: 10px;
+      }
+
+      &-text {
+        margin-left: 15px;
+        font-family: $regular_font;
+        font-size: 24px;
+      }
+
+      &-button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+        background-color: #0c97f9;
+        color: #fff;
+        border-radius: 32px;
+        font-size: 20;
+        line-height: 40px;
+      }
+    }
+  }
 
   &-bg {
     background-color: #7b757d;

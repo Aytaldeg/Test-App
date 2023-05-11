@@ -4,7 +4,7 @@ import { isMobile } from "react-device-detect";
 
 function Main() {
   return (
-    <div className="pmain">
+    <div className="pmain" id="main">
       <div className="pmain-bgImage" />
       <div className="pmain-bgColor" />
       <div className="wrapper">

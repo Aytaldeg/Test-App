@@ -84,11 +84,16 @@ function Footer() {
                     ))}
                   </div>
                   <div className="footer-mid">
-                    <div className="footer-midtext">Главная</div>
+                    <div className="footer-midtext">
+                      <a href="#main"> Главная</a>
+                    </div>
                     <div className="footer-midtext">Преимущества</div>
                     <div className="footer-midtext">Как стать поставщиком?</div>
                     <div className="footer-midtext">F.A.Q</div>
-                    <div className="footer-midtext">Обратная связь</div>
+                    <div className="footer-midtext">
+                      {" "}
+                      <a href="#feedback"> Обратная связь</a>
+                    </div>
                   </div>
                   <div className="footer-right">
                     <div className="footer-phone">
