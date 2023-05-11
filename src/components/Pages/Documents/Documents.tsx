@@ -23,7 +23,10 @@ function Documents() {
 
                 <div className="documents-buttonactive">
                   <React.Fragment>
-                    <button onClick={() => setModal(true)}>
+                    <button
+                      className="documents-bbtn"
+                      onClick={() => setModal(true)}
+                    >
                       {" "}
                       <img src={arrow} />
                     </button>

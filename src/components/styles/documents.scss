@@ -97,6 +97,10 @@ $black_font: "Jost-Black";
     justify-content: space-between;
   }
 
+  &-bbtn {
+    border: #7b757d;
+  }
+
   &-button {
     display: flex;
     flex-direction: column;

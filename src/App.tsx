@@ -11,7 +11,7 @@ import Vacancies from "./components/Pages/Vacancies";
 import Contacts from "./components/Pages/Contacts";
 
 function App() {
-  const [isSwitched, setIsSwitched] = useState<boolean>(false);
+  const [isSwitched, setIsSwitched] = useState<boolean>(true);
 
   let toggle = () => {
     setIsSwitched(!isSwitched);
@@ -21,13 +21,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header isSwitched={isSwitched} toggled={toggle} />
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={isSwitched ? <Partner /> : <Store />} />
           <Route path="/about" element={<About />} />
           <Route path="/documents" element={<Docs />} />
           <Route path="/jobs" element={<Vacancies />} />
           <Route path="/contacts" element={<Contacts />} />
-        </Routes>
+        </Routes> */}
         <Footer />
       </div>
     </BrowserRouter>
