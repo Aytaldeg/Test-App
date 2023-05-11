@@ -5,7 +5,7 @@ import { isMobile } from "react-device-detect";
 
 function Retaily() {
   return (
-    <div className="pretaily">
+    <div className="pretaily" id="retaily">
       <div className="pretaily-bg">RETAILY</div>
       <div className="wrapper">
         {isMobile ? (

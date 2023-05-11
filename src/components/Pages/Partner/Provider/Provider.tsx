@@ -3,7 +3,7 @@ import { isMobile } from "react-device-detect";
 
 function Provider() {
   return (
-    <div className="pprovider">
+    <div className="pprovider" id="provider">
       <div className="pprovider-bg"></div>
       <div className="wrapper">
         {isMobile ? (

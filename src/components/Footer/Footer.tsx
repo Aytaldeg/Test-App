@@ -5,6 +5,7 @@ import qr from "../Assets/qr.png";
 import logo from "../Assets/logo.png";
 import { isMobile } from "react-device-detect";
 import { Fragment } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Footer() {
   const arrayLeft = [
@@ -24,19 +25,64 @@ function Footer() {
               <div className="footer-gorizontal">
                 <div className="footer-info">
                   <div className="footer-left">
-                    <div className="footer-logo">
+                    <Link
+                      className="footer-logo"
+                      to="header"
+                      smooth={true}
+                      duration={500}
+                    >
                       <img src={logo} />
-                    </div>
+                    </Link>
                     {arrayLeft.map((item: any) => (
                       <div className="footer-leftext">{item.text}</div>
                     ))}
                   </div>
                   <div className="footer-mid">
-                    <div className="footer-midtext">Главная</div>
-                    <div className="footer-midtext">Преимущества</div>
-                    <div className="footer-midtext">Как стать поставщиком?</div>
-                    <div className="footer-midtext">F.A.Q</div>
-                    <div className="footer-midtext">Обратная связь</div>
+                    <Link
+                      className="footer-midtext"
+                      to={"main"}
+                      smooth={true}
+                      duration={1000}
+                      offset={190}
+                    >
+                      Главная
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"retaily"}
+                      smooth={true}
+                      duration={1000}
+                      offset={80}
+                    >
+                      Преимущества
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"provider"}
+                      smooth={true}
+                      duration={1000}
+                      offset={40}
+                    >
+                      Как стать поставщиком?
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"faq"}
+                      smooth={true}
+                      duration={1000}
+                      offset={-200}
+                    >
+                      F.A.Q
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"feedback"}
+                      smooth={true}
+                      duration={500}
+                      offset={100}
+                    >
+                      Обратная связь
+                    </Link>
                   </div>
                 </div>
                 <div className="footer-tlinks">
@@ -76,24 +122,64 @@ function Footer() {
               <div className="footer-gorizontal">
                 <div className="footer-info">
                   <div className="footer-left">
-                    <div className="footer-logo">
+                    <Link
+                      className="footer-logo"
+                      smooth={true}
+                      to="header"
+                      duration={500}
+                    >
                       <img src={logo} />
-                    </div>
+                    </Link>
                     {arrayLeft.map((item: any) => (
                       <div className="footer-leftext">{item.text}</div>
                     ))}
                   </div>
                   <div className="footer-mid">
-                    <div className="footer-midtext">
-                      <a href="#main"> Главная</a>
-                    </div>
-                    <div className="footer-midtext">Преимущества</div>
-                    <div className="footer-midtext">Как стать поставщиком?</div>
-                    <div className="footer-midtext">F.A.Q</div>
-                    <div className="footer-midtext">
-                      {" "}
-                      <a href="#feedback"> Обратная связь</a>
-                    </div>
+                    <Link
+                      className="footer-midtext"
+                      to={"main"}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                    >
+                      Главная
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"retaily"}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                    >
+                      Преимущества
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"provider"}
+                      smooth={true}
+                      duration={500}
+                      offset={-60}
+                    >
+                      Как стать поставщиком?
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"faq"}
+                      smooth={true}
+                      duration={500}
+                      offset={-120}
+                    >
+                      F.A.Q
+                    </Link>
+                    <Link
+                      className="footer-midtext"
+                      to={"feedback"}
+                      smooth={true}
+                      duration={500}
+                      offset={-100}
+                    >
+                      Обратная связь
+                    </Link>
                   </div>
                   <div className="footer-right">
                     <div className="footer-phone">

@@ -2,7 +2,9 @@ function FAQ() {
   return (
     <div className="pfaq">
       <div className="wrapper">
-        <div className="pfaq-title">F.A.Q</div>
+        <div className="pfaq-title" id="faq">
+          F.A.Q
+        </div>
         <div className="pfaq-content">
           <div className="pfaq-leftSide">
             <div className="pfaq-line">

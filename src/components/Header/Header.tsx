@@ -13,7 +13,7 @@ function Header(props: PropsType) {
   const [Visible, setVisible] = useState<boolean>(false);
 
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="wrapper">
         <div className="header-items">
           <div className="header-logo">
