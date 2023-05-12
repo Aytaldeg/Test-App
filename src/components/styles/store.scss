@@ -21,7 +21,49 @@ $regular_font: "Jost-Regular";
   font-style: normal;
 }
 
-.smain {
+.pmain {
+  @media (max-width: 1200px) {
+    height: 1424px;
+    position: relative;
+    top: 101px;
+    background-color: #000000;
+  }
+
+  @media (max-width: 1200px) {
+    .pmain {
+      &-bgImage {
+        position: absolute;
+        background-image: url("./../Assets/tbackground.png");
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-size: 100% 100%;
+      }
+
+      &-ttitle {
+        padding-top: 340px;
+        font-size: 48px;
+        color: #fff;
+        font-family: $font;
+        text-transform: uppercase;
+      }
+
+      &-tsubtitle {
+        color: #bdbdbd;
+        font-size: 32px;
+        padding-top: 100px;
+        font-family: $font;
+      }
+
+      &-tplay {
+        margin-top: 120px;
+        margin-bottom: 500px;
+      }
+    }
+  }
+
   height: 870px;
   position: relative;
   top: 101px;
@@ -68,10 +110,37 @@ $regular_font: "Jost-Regular";
   }
 }
 
-.strategy {
+.pstrategy {
   height: 870px;
   position: relative;
   top: 101px;
+
+  @media (max-width: 1200px) {
+    height: 1024px;
+    position: relative;
+    top: 101px;
+
+    .pstrategy {
+      &-bg {
+        font-family: $font;
+        font-size: 130px;
+        color: #0c97f9;
+        opacity: 0.1;
+        margin-top: 260px;
+        line-height: 180px;
+      }
+
+      &-text {
+        position: relative;
+        top: -80px;
+        font-family: $regular_font;
+        font-size: 32px;
+        width: 996px;
+        margin: auto;
+        text-align: justify;
+      }
+    }
+  }
 
   &-bg {
     font-family: $font;
@@ -93,10 +162,16 @@ $regular_font: "Jost-Regular";
   }
 }
 
-.retaily {
+.pretaily {
   height: 870px;
   position: relative;
   top: 101px;
+
+  @media (max-width: 1200px) {
+    height: 1724px;
+    position: relative;
+    top: 101px;
+  }
 
   &-wrapper_str {
     width: 1296px;
@@ -177,10 +252,57 @@ $regular_font: "Jost-Regular";
   }
 }
 
-.statistics {
+.pstatistics {
   height: 870px;
   position: relative;
   top: 101px;
+  @media (max-width: 1200px) {
+    height: 1424px;
+    position: relative;
+    top: 101px;
+  }
+
+  @media (max-width: 1200px) {
+    .pstatistics {
+      &-title {
+        font-family: $font;
+        font-size: 48px;
+        color: #000;
+        margin-top: 100px;
+        text-transform: uppercase;
+      }
+
+      &-data {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        margin: auto;
+        padding-top: 100px;
+        justify-content: center;
+        gap: 80px;
+      }
+
+      &-orders {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-text {
+        font-family: $regular_font;
+        font-size: 36px;
+        opacity: 0.5;
+        font-family: $font;
+      }
+
+      &-numbers {
+        font-family: $regular_font;
+        font-size: 96px;
+        justify-content: center;
+        color: #0c97f9;
+      }
+    }
+  }
 
   &-title {
     font-family: $font;

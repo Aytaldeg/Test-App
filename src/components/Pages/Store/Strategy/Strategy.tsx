@@ -1,9 +1,9 @@
 function Strategy() {
   return (
-    <div className="strategy">
+    <div className="pstrategy">
       <div className="wrapper">
-        <div className="strategy-bg">СТРАТЕГИЯ</div>
-        <div className="strategy-text">
+        <div className="pstrategy-bg">СТРАТЕГИЯ</div>
+        <div className="pstrategy-text">
           Мы — компания родом из самой холодной точки на планете Земля, где
           проживают люди. В таких тяжелых условиях человек обязан проявлять свои
           самые лучшие качества выживания и быть всегда готовым к серьезным
