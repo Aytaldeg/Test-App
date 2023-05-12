@@ -14,6 +14,26 @@
   animation-duration: 300ms;
 }
 
+// @media (max-width: 1200px) {
+//   .modal-dialog {
+//     width: 100%;
+//     max-width: 1200px;
+//     background: white;
+//     position: relative;
+//     margin: 0 100px;
+//     max-height: 700px;
+//     text-align: left;
+//     display: flex;
+//     flex-direction: column;
+//     overflow: hidden;
+//     margin-top: 100px;
+//     -webkit-animation-name: animatetop;
+//     -webkit-animation-duration: 0.4s;
+//     animation-name: slide-in;
+//     animation-duration: 0.5s;
+//   }
+// }
+
 .modal-dialog {
   width: 100%;
   max-width: 2100px;

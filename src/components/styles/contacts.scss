@@ -38,6 +38,13 @@ $semibold_font: "Jost-SemiBold";
   position: relative;
   top: 101px;
 
+  @media (max-width: 1200px) {
+    .wrapper {
+      position: relative;
+      top: 40px;
+    }
+  }
+
   &-bg {
     position: absolute;
     background-color: #7b757d;

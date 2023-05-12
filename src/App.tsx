@@ -23,10 +23,10 @@ function App() {
         <Header isSwitched={isSwitched} toggled={toggle} />
         <Routes>
           <Route path="/" element={isSwitched ? <Partner /> : <Store />} />
-          {/* <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/documents" element={<Docs />} />
           <Route path="/jobs" element={<Vacancies />} />
-          <Route path="/contacts" element={<Contacts />} /> */}
+          <Route path="/contacts" element={<Contacts />} />
         </Routes>
         <Footer />
       </div>
