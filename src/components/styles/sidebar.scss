@@ -30,16 +30,23 @@ $black_font: "Jost-Black";
 
 @media (max-width: 1200px) {
   .sidepanel {
+    width: 1200px;
+    height: 50px;
     color: black;
-    text-align: left;
+    left: -0px;
     font-size: 32px;
     font-family: $regular_font;
     display: flex;
     flex-direction: row;
     gap: 60px;
-    margin-top: 0px;
-    position: absolute;
+    margin-top: -30px;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
     text-decoration: none;
+
+    // Для прокрутки сайдбара
+    position: fixed;
+    background-color: rgba($color: #fff, $alpha: 0.1);
   }
 }
