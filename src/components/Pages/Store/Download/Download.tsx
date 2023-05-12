@@ -3,46 +3,98 @@ import iphone from "../../../Assets/iphone.png";
 import apple2 from "../../../Assets/apple2.png";
 import google2 from "../../../Assets/google2.png";
 import qr2 from "../../../Assets/qr2.png";
+import { isMobile } from "react-device-detect";
+import { Fragment } from "react";
 
 function Download() {
   return (
     <div className="download">
       <div className="download-bg" />
       <div className="wrapper">
-        <div className="download-content">
-          <div className="download-try">
-            <div className="download-title">
-              <div className="download-text">
-                Скачайте приложение или <br /> оформляйте заказы на сайте <br />
-                Retaily.online!
-              </div>
-              <div className="download-button">ПОПРОБОВАТЬ</div>
-            </div>
-            <div className="download-pict">
-              <div className="download-Mac3">
-                <img src={mac3} />
-              </div>
-              <div className="download-iphone">
-                <img src={iphone} />
-              </div>
-            </div>
-          </div>
-          <div className="download-links">
+        {isMobile ? (
+          <Fragment>
             {" "}
-            <div className="download-google">
-              <img src={google2} />
+            <div className="download-content">
+              <div className="download-try">
+                <div className="download-title">
+                  <div className="download-text">
+                    Скачайте приложение или <br /> оформляйте заказы на сайте{" "}
+                    <br />
+                    Retaily.online!
+                  </div>
+                  <div className="download-button">ПОПРОБОВАТЬ</div>
+                </div>
+                <div className="download-pict">
+                  <div className="download-Mac3">
+                    <img src={mac3} />
+                  </div>
+                  <div className="download-iphone">
+                    <img src={iphone} />
+                  </div>
+                </div>
+              </div>
+              <div className="download-links">
+                {" "}
+                <div className="download-market">
+                  {" "}
+                  <div className="download-google">
+                    <img src={google2} />
+                  </div>
+                  <div className="download-qr">
+                    <img src={qr2} />
+                  </div>
+                </div>
+                <div className="download-market">
+                  <div className="download-appstore">
+                    <img src={apple2} />
+                  </div>
+                  <div className="download-qr">
+                    <img src={qr2} />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="download-qr">
-              <img src={qr2} />
+          </Fragment>
+        ) : (
+          <Fragment>
+            {" "}
+            <div className="download-content">
+              <div className="download-try">
+                <div className="download-title">
+                  <div className="download-text">
+                    Скачайте приложение или <br /> оформляйте заказы на сайте{" "}
+                    <br />
+                    Retaily.online!
+                  </div>
+                  <div className="download-button">ПОПРОБОВАТЬ</div>
+                </div>
+                <div className="download-pict">
+                  <div className="download-Mac3">
+                    <img src={mac3} />
+                  </div>
+                  <div className="download-iphone">
+                    <img src={iphone} />
+                  </div>
+                </div>
+              </div>
+              <div className="download-links">
+                {" "}
+                <div className="download-google">
+                  <img src={google2} />
+                </div>
+                <div className="download-qr">
+                  <img src={qr2} />
+                </div>
+                <div className="download-appstore">
+                  <img src={apple2} />
+                </div>
+                <div className="download-qr">
+                  <img src={qr2} />
+                </div>
+              </div>
             </div>
-            <div className="download-appstore">
-              <img src={apple2} />
-            </div>
-            <div className="download-qr">
-              <img src={qr2} />
-            </div>
-          </div>
-        </div>
+          </Fragment>
+        )}
       </div>
     </div>
   );

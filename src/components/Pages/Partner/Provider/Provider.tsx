@@ -9,7 +9,6 @@ function Provider() {
         {isMobile ? (
           <Fragment>
             <div className="pprovider-title">Как стать поставщиком?</div>
-
             <div className="pprovider-maincont">
               <div className="pprovider-contentup">
                 <div className="pprovider-content">

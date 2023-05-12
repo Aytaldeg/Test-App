@@ -16,10 +16,10 @@ function Store() {
       <Strategy />
       <Retaily />
       <Statistics />
-      {/* <Provider />
+      <Provider />
       <Download />
       <FAQ />
-      <Feedback /> */}
+      <Feedback />
     </div>
   );
 }
