@@ -1,8 +1,6 @@
 import { isMobile } from "react-device-detect";
 import Sidebar from "../../Sidebar/Sidebar";
 import { Fragment } from "react";
-import location from "../../Assets/location.png";
-import clock from "../../Assets/clock.png";
 
 function Jobs() {
   return (
@@ -30,18 +28,11 @@ function Jobs() {
                   </div>
                   <div className="jobs-info">
                     <div className="jobs-data">
-                      <img src={location} />
-                      <div className="jobs-text">
-                        {" "}
-                        &nbsp; Удаленно/Якутск, Петра Алексеева 17
-                      </div>
+                      <img />
+                      Удаленно/Якутск, Петра Алексеева 17
                     </div>
                     <div className="jobs-data">
-                      {" "}
-                      <img src={clock} />
-                      <div className="jobs-text">
-                        &nbsp; Полная занятость/Свободный график
-                      </div>
+                      Полная занятость/Свободный график
                     </div>
                   </div>
                   <div className="jobs-button">ПОДРОБНЕЕ</div>
@@ -61,18 +52,11 @@ function Jobs() {
                   </div>
                   <div className="jobs-info">
                     <div className="jobs-data">
-                      <img src={location} />
-                      <div className="jobs-text">
-                        {" "}
-                        &nbsp; Удаленно/Якутск, Петра Алексеева 17
-                      </div>
+                      <img />
+                      Удаленно/Якутск, Петра Алексеева 17
                     </div>
                     <div className="jobs-data">
-                      {" "}
-                      <img src={clock} />
-                      <div className="jobs-text">
-                        &nbsp; Полная занятость/Свободный график
-                      </div>
+                      Полная занятость/Свободный график
                     </div>
                   </div>
                   <div className="jobs-button">ПОДРОБНЕЕ</div>
