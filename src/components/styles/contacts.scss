@@ -67,6 +67,8 @@ $semibold_font: "Jost-SemiBold";
         display: flex;
         flex-direction: row;
         width: 100%;
+        position: relative;
+        left: 0px;
       }
 
       &-sidepanel {
@@ -168,6 +170,8 @@ $semibold_font: "Jost-SemiBold";
     display: flex;
     flex-direction: row;
     width: 100%;
+    position: relative;
+    left: 150px;
   }
 
   &-sidepanel {

@@ -936,11 +936,11 @@ $regular_font: "Jost-Regular";
         padding-left: 120px;
       }
 
-      &-rightSide {
+      &-rightSidee {
         width: 50%;
         display: flex;
-        margin-right: 160px;
-        margin-top: 70px;
+        margin-right: 120px;
+        margin-top: -80px;
       }
 
       &-upsecond {
@@ -965,9 +965,9 @@ $regular_font: "Jost-Regular";
         margin-left: 40px;
       }
 
-      &-downfirst {
+      &-sdownfirst {
         display: flex;
-        margin-top: 60px;
+        position: relative;
       }
 
       &-line {
@@ -1061,7 +1061,7 @@ $regular_font: "Jost-Regular";
     margin-bottom: 70px;
   }
 
-  &-upfirste {
+  &-supfirste {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -1113,7 +1113,7 @@ $regular_font: "Jost-Regular";
     margin-top: 0px;
   }
 
-  &-titletext {
+  &-stitletext {
     font-size: 32px;
     font-family: $regular_font;
     color: #000;

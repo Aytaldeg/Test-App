@@ -8,7 +8,6 @@ function Contact() {
       <div className="contacts-bg" />
       <div className="wrapper">
         <Sidebar />
-
         {isMobile ? (
           <Fragment>
             {" "}

@@ -10,7 +10,7 @@ function FAQ() {
               <div className="pfaq-straight" />
               <div className="pfaq-dotdown" />
             </div>
-            <div className="pfaq-upfirste">
+            <div className="pfaq-supfirste">
               <div className="pfaq-ftext">
                 <div className="pfaq-titletext">Как работает Retaily?</div>
                 <div className="pfaq-text">
@@ -21,9 +21,9 @@ function FAQ() {
                 </div>
               </div>
 
-              <div className="pfaq-downfirst">
+              <div className="pfaq-sdownfirst">
                 <div className="pfaq-ftext">
-                  <div className="pfaq-titletext">
+                  <div className="pfaq-stitletext">
                     Видны ли остатки на складах у поставщика?
                   </div>
                   <div className="pfaq-text">Да</div>

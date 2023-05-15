@@ -23,7 +23,7 @@ function FAQ() {
                 </div>
               </div>
 
-              <div className="pfaq-downfirst">
+              <div className="pfaq-pdownfirst">
                 <div className="pfaq-ftext">
                   <div className="pfaq-titletext">
                     Возможно ли установить персональные цены для разных
