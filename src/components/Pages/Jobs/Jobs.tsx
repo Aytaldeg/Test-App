@@ -1,6 +1,7 @@
 import { isMobile } from "react-device-detect";
 import Sidebar from "../../Sidebar/Sidebar";
 import { Fragment } from "react";
+import Manager from "./Manager";
 
 function Jobs() {
   return (
@@ -36,6 +37,7 @@ function Jobs() {
                     </div>
                   </div>
                   <div className="jobs-button">ПОДРОБНЕЕ</div>
+                  <Manager />
                 </div>
                 <div className="jobs-contents">
                   <div className="jobs-salary">
