@@ -111,6 +111,52 @@ html {
   &-play {
     padding-top: 140px;
   }
+
+  //mobile
+
+  @media (max-width: 360px) {
+    .pmain {
+      height: 1024px;
+      position: relative;
+      top: 101px;
+      background-color: #000000;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .pmain {
+      &-bgImage {
+        position: absolute;
+        background-image: url("./../Assets/backgroundm.png");
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-size: 100% 100%;
+      }
+
+      &-ttitle {
+        padding-top: 340px;
+        font-size: 20px;
+        color: #fff;
+        font-family: $font;
+        text-transform: uppercase;
+      }
+
+      &-tsubtitle {
+        color: #bdbdbd;
+        font-size: 32px;
+        padding-top: 100px;
+        font-family: $font;
+      }
+
+      &-tplay {
+        margin-top: 120px;
+        margin-bottom: 500px;
+      }
+    }
+  }
 }
 
 .pstrategy {

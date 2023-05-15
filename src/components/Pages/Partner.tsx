@@ -12,12 +12,12 @@ function Partner() {
   return (
     <div className="Partner">
       <Main />
-      <Strategy />
+      {/* <Strategy />
       <Retaily />
       <Statistics />
       <Provider />
       <FAQ />
-      <Feedback />
+      <Feedback /> */}
     </div>
   );
 }

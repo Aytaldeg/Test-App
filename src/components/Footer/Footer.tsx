@@ -2,6 +2,7 @@ import "../styles/partner.scss";
 import apple from "../Assets/apple.png";
 import google from "../Assets/google.png";
 import qr from "../Assets/qr.png";
+import mpqr from "../Assets/mpqr.png";
 import logo from "../Assets/logo.png";
 import { isMobile } from "react-device-detect";
 import { Fragment } from "react";
@@ -85,6 +86,17 @@ function Footer() {
                     </Link>
                   </div>
                 </div>
+                <div className="footer-right">
+                  <div className="footer-phone">
+                    <div className="footer-rightext">Телефон</div>
+                    <div className="footer-rightsub">+7 (964) 333-33-33</div>
+                  </div>
+                  <div className="footer-mail">
+                    {" "}
+                    <div className="footer-rightext">E-mail</div>
+                    <div className="footer-rightsub">info@retaily.online</div>
+                  </div>
+                </div>
                 <div className="footer-tlinks">
                   <div className="footer-oc">
                     {" "}
@@ -94,6 +106,9 @@ function Footer() {
                     <div className="footer-qr">
                       <img src={qr} />
                     </div>
+                    <div className="footer-mpqr">
+                      <img src={mpqr} />
+                    </div>
                   </div>
                   <div className="footer-oc">
                     <div className="footer-appstore">
@@ -101,6 +116,9 @@ function Footer() {
                     </div>
                     <div className="footer-pqr">
                       <img src={qr} />
+                    </div>
+                    <div className="footer-mpqr">
+                      <img src={mpqr} />
                     </div>
                   </div>
                 </div>

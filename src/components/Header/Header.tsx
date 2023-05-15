@@ -19,7 +19,7 @@ function Header(props: PropsType) {
           <div className="header-logo">
             <NavLink to="/">
               <div className="header-logo_logo">
-                <img src={Vector} />
+                <img className="header-pict" src={Vector} />
               </div>
             </NavLink>
             <NavLink to="/" className="header-logo-text">
