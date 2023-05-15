@@ -32,21 +32,51 @@ html {
     top: 101px;
     background-color: #000000;
   }
+
+  @media (max-width: 360px) {
+    height: 624px;
+    position: relative;
+    top: 101px;
+    background-color: #000000;
+  }
+
   height: 870px;
   position: relative;
   top: 101px;
   background-color: #000000;
 
   @media (max-width: 1200px) {
-    &-bgImage {
-      position: absolute;
-      background-image: url("./../Assets/tbackground.png");
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      background-size: 100% 100%;
+    .pmain {
+      &-bgImage {
+        position: absolute;
+        background-image: url("./../Assets/tbackground.png");
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-size: 100% 100%;
+      }
+
+      &-ttitle {
+        padding-top: 340px;
+        font-size: 48px;
+        color: #fff;
+        font-family: $font;
+        text-transform: uppercase;
+      }
+
+      &-tsubtitle {
+        color: #bdbdbd;
+        font-size: 32px;
+        padding-top: 100px;
+        font-family: $font;
+      }
+
+      &-tplay {
+        margin-top: 120px;
+        margin-bottom: 500px;
+      }
     }
   }
   &-bgImage {
@@ -70,15 +100,6 @@ html {
     bottom: 0;
   }
 
-  @media (max-width: 1200px) {
-    &-ttitle {
-      padding-top: 340px;
-      font-size: 48px;
-      color: #fff;
-      font-family: $font;
-      text-transform: uppercase;
-    }
-  }
   &-title {
     padding-top: 180px;
     font-size: 48px;
@@ -87,14 +108,6 @@ html {
     text-transform: uppercase;
   }
 
-  @media (max-width: 1200px) {
-    &-tsubtitle {
-      color: #bdbdbd;
-      font-size: 32px;
-      padding-top: 100px;
-      font-family: $font;
-    }
-  }
   &-subtitle {
     color: #bdbdbd;
     font-size: 32px;
@@ -102,26 +115,11 @@ html {
     font-family: $font;
   }
 
-  @media (max-width: 1200px) {
-    &-tplay {
-      margin-top: 120px;
-      margin-bottom: 500px;
-    }
-  }
   &-play {
     padding-top: 140px;
   }
 
   //mobile
-
-  @media (max-width: 360px) {
-    .pmain {
-      height: 1024px;
-      position: relative;
-      top: 101px;
-      background-color: #000000;
-    }
-  }
 
   @media (max-width: 360px) {
     .pmain {
@@ -137,7 +135,7 @@ html {
       }
 
       &-ttitle {
-        padding-top: 340px;
+        padding-top: 140px;
         font-size: 20px;
         color: #fff;
         font-family: $font;
@@ -146,14 +144,21 @@ html {
 
       &-tsubtitle {
         color: #bdbdbd;
-        font-size: 32px;
-        padding-top: 100px;
+        font-size: 16px;
+        padding-top: 20px;
         font-family: $font;
+        margin-left: 40px;
+        margin-right: 40px;
       }
 
       &-tplay {
-        margin-top: 120px;
-        margin-bottom: 500px;
+        margin-bottom: 50px;
+      }
+
+      &-tplay img {
+        width: 30%;
+        position: relative;
+        bottom: 80px;
       }
     }
   }
@@ -163,11 +168,20 @@ html {
   height: 870px;
   position: relative;
   top: 101px;
+
   @media (max-width: 1200px) {
     height: 1024px;
     position: relative;
     top: 101px;
+  }
 
+  @media (max-width: 360px) {
+    height: 624px;
+    position: relative;
+    top: 101px;
+  }
+
+  @media (max-width: 1200px) {
     .pstrategy {
       &-bg {
         font-family: $font;
@@ -186,6 +200,27 @@ html {
         width: 996px;
         margin: auto;
         text-align: justify;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .pstrategy {
+      &-bg {
+        font-family: $font;
+        font-size: 54px;
+        color: #0c97f9;
+        opacity: 0.1;
+        margin-top: -100px;
+        line-height: 180px;
+      }
+
+      &-text {
+        position: relative;
+        font-family: $regular_font;
+        font-size: 16px;
+        text-align: justify;
+        width: 300px;
       }
     }
   }
@@ -221,7 +256,100 @@ html {
     top: 101px;
   }
 
+  @media (max-width: 360px) {
+    height: 624px;
+    position: relative;
+    top: 101px;
+  }
+
   @media (max-width: 1200px) {
+    .pretaily {
+      &-wrapper_str {
+        width: 1296px;
+        margin: auto;
+        position: relative;
+      }
+
+      &-bg {
+        font-family: $font;
+        font-size: 190px;
+        background-color: #7b757d;
+        color: #0c97f9;
+        opacity: 0.1;
+        padding-top: 140px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-textp {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        position: relative;
+        right: 80px;
+      }
+
+      &-dots {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-dot {
+        width: 14px;
+        height: 14px;
+        background-color: #0c97f9;
+        border-radius: 50%;
+        position: relative;
+        top: -50px;
+        border: 4px solid #ffffff;
+        outline: solid 1px #0c97f9;
+      }
+
+      &-text {
+        font-family: $regular_font;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 550px;
+        margin-left: 55px;
+        text-align: left;
+        position: relative;
+        top: -80px;
+      }
+
+      &-img {
+        flex-grow: 1;
+        position: relative;
+        left: 60px;
+        top: 160px;
+      }
+
+      &-mac {
+        display: flex;
+        transform: translate(0, 280px);
+        margin-right: 130px;
+      }
+
+      &-smartphon {
+        display: flex-end;
+        transform: translate(0, -250px);
+        margin-left: 80px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
     .pretaily {
       &-wrapper_str {
         width: 1296px;

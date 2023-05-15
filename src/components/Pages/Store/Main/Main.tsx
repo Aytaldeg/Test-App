@@ -4,36 +4,36 @@ import { Fragment } from "react";
 
 function Main() {
   return (
-    <div className="pmain" id="main">
-      <div className="pmain-bgImage" />
-      <div className="pmain-bgColor" />
+    <div className="smain" id="main">
+      <div className="smain-bgImage" />
+      <div className="smain-bgColor" />
       <div className="wrapper">
         {isMobile ? (
           <Fragment>
-            <div className="pmain-ttitle">
+            <div className="smain-ttitle">
               Покупайте напрямую у <br />
               лучших поставщиков <br />
               вашего города
             </div>
-            <div className="pmain-tsubtitle">
+            <div className="smain-tsubtitle">
               Скачайте приложение Retaily на Ваше <br />
               мобильное устройство или оформляйте заказы
               <br /> на Retaily.online!
-              <div className="pmain-tplay">
+              <div className="smain-tplay">
                 <img src={play} />
               </div>
             </div>
           </Fragment>
         ) : (
           <Fragment>
-            <div className="pmain-title">
+            <div className="smain-title">
               Покупайте напрямую у лучших
               <br /> поставщиков вашего города
             </div>
-            <div className="pmain-subtitle">
+            <div className="smain-subtitle">
               Скачайте приложение Retaily на Ваше мобильное устройство <br />
               или оформляйте заказы на Retaily.online!
-              <div className="pmain-play">
+              <div className="smain-play">
                 <img src={play} />
               </div>
             </div>

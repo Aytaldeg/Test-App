@@ -669,8 +669,7 @@ $regular_font: "Jost-Regular";
         font-family: $regular_font;
         text-align: start;
         gap: 10px;
-        position: relative;
-        left: 20px;
+        margin-left: 20px;
       }
 
       &-company {
