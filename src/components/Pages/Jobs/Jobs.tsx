@@ -1,9 +1,11 @@
 import { isMobile } from "react-device-detect";
 import Sidebar from "../../Sidebar/Sidebar";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Manager from "./Manager";
+import { NavLink } from "react-router-dom";
 
 function Jobs() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <div className="jobs">
       <div className="jobs-bg" />
@@ -36,9 +38,11 @@ function Jobs() {
                       Полная занятость/Свободный график
                     </div>
                   </div>
-                  <div className="jobs-button">ПОДРОБНЕЕ</div>
-                  <Manager />
+                  <NavLink to="/manager" className="jobs-nbutton">
+                    ПОДРОБНЕЕ
+                  </NavLink>
                 </div>
+
                 <div className="jobs-contents">
                   <div className="jobs-salary">
                     <div className="jobs-name">Менеджер по продажам</div>
@@ -61,7 +65,13 @@ function Jobs() {
                       Полная занятость/Свободный график
                     </div>
                   </div>
-                  <div className="jobs-button">ПОДРОБНЕЕ</div>
+                  <div
+                    className="jobs-button"
+                    onClick={() => setIsOpen(!isOpen)}
+                  >
+                    ПОДРОБНЕЕ
+                  </div>
+                  {isOpen ? <Manager /> : null}
                 </div>
               </div>
             </div>

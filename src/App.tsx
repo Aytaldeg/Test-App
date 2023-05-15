@@ -9,6 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Docs from "./components/Pages/Docs";
 import Vacancies from "./components/Pages/Vacancies";
 import Contacts from "./components/Pages/Contacts";
+import Manager from "./components/Pages/Jobs/Manager";
 
 function App() {
   const [isSwitched, setIsSwitched] = useState<boolean>(true);
@@ -27,6 +28,7 @@ function App() {
           <Route path="/documents" element={<Docs />} />
           <Route path="/jobs" element={<Vacancies />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/manager" element={<Manager />} />
         </Routes>
         <Footer />
       </div>
