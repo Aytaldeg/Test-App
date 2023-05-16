@@ -1,11 +1,12 @@
 import { isMobile } from "react-device-detect";
 import Sidebar from "../../Sidebar/Sidebar";
-import { Fragment, useState } from "react";
+import { FC, Fragment, useState } from "react";
 import Manager from "./Manager";
 import { NavLink } from "react-router-dom";
 
-function Jobs() {
+const Jobs = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className="jobs">
       <div className="jobs-bg" />
@@ -67,7 +68,9 @@ function Jobs() {
                   </div>
                   <div
                     className="jobs-button"
-                    onClick={() => setIsOpen(!isOpen)}
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
                   >
                     ПОДРОБНЕЕ
                   </div>
@@ -144,6 +147,6 @@ function Jobs() {
       </div>
     </div>
   );
-}
+};
 
 export default Jobs;

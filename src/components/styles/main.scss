@@ -103,23 +103,23 @@ $regular_font: "Jost-Regular";
         font-size: 12px;
         border-radius: 25px;
         font-family: $regular_font;
-        padding: 6px 12px;
         cursor: pointer;
-      }
-      &-button {
-        font-family: $font;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        user-select: none;
-        &_active {
+        &-button {
+          font-family: $font;
+          color: #fff;
           display: flex;
           align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          border-radius: 25px;
-          padding: 6px 12px;
           user-select: none;
+
+          &_active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 5px 5px;
+            user-select: none;
+          }
         }
       }
 

@@ -1,8 +1,12 @@
-import React from "react";
+import { FC } from "react";
 import "../styles/sidebar.scss";
 import { NavLink } from "react-router-dom";
 
-const Sidebar = () => {
+type PropsType = {
+  breadCramb?: boolean;
+};
+
+const Sidebar: FC<PropsType> = ({ breadCramb }) => {
   return (
     <div className="sidepanel">
       <NavLink to="/about" className="non-active">
@@ -11,7 +15,7 @@ const Sidebar = () => {
       <NavLink to="/documents" className="non-active">
         Документы
       </NavLink>
-      <NavLink to="/jobs" className="non-active">
+      <NavLink to="/jobs" className={breadCramb ? ".active" : "non-active"}>
         Вакансии
       </NavLink>
       <NavLink to="/contacts" className="non-active">

@@ -2,8 +2,10 @@ import link from "../../Assets/link.png";
 import ellipse1 from "../../Assets/ellipse1.png";
 import ellipse2 from "../../Assets/ellipse2.png";
 import Sidebar from "../../Sidebar/Sidebar";
+import { NavLink } from "react-router-dom";
+import { FC } from "react";
 
-function Manager() {
+const Manager = () => {
   return (
     <div className="manager">
       <div className="manager-bg" />
@@ -11,8 +13,10 @@ function Manager() {
         <Sidebar />
         <div className="manager-main">
           <div className="manager-sales">
-            <span className="manager-opacity">Вакансии</span> /Менеджер по
-            продажам
+            <NavLink to="/jobs" style={{ textDecoration: "none" }}>
+              <span className="manager-opacity">Вакансии</span>
+            </NavLink>{" "}
+            /Менеджер по продажам
           </div>
           <div className="manager-money">от 135 000 - 150 000 руб./месяц</div>
           <div className="manager-respons">
@@ -94,6 +98,6 @@ function Manager() {
       </div>
     </div>
   );
-}
+};
 
 export default Manager;

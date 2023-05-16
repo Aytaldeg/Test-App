@@ -54,9 +54,9 @@ function AboutCompany() {
                   </div>
                 </div>
                 <div className="about-team">
-                  Команда
+                  <div className="about-team-title">Команда</div>
                   <div className="about-persons">
-                    <div className="-about-person">
+                    <div className="about-person">
                       <div className="about-pphoto">
                         <img src={zakharov} />
                       </div>
@@ -155,11 +155,11 @@ function AboutCompany() {
                   <div className="about-infodata">
                     ·&nbsp;Персональный подход к решению задач заказчика
                   </div>
-                </div>
 
-                <div className="about-ooo">
-                  ООО «Ретейли», ИНН 1435357777/ КПП 143501001/ ОГРН
-                  1211400000657 от 28.01.2021 г.
+                  <div className="about-ooo">
+                    ООО «Ретейли», ИНН 1435357777/ КПП 143501001/ ОГРН
+                    1211400000657 от 28.01.2021 г.
+                  </div>
                 </div>
               </div>
             </div>

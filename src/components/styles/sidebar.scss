@@ -45,8 +45,27 @@ $black_font: "Jost-Black";
     z-index: 2;
     text-decoration: none;
 
-    // Для прокрутки сайдбара
-    position: fixed;
+    position: absolute;
     background-color: rgba($color: #fff, $alpha: 0.1);
+  }
+}
+
+@media (max-width: 360px) {
+  .sidepanel {
+    width: 360px;
+    height: 20px;
+    color: black;
+    left: -0px;
+    font-size: 14px;
+    font-family: $regular_font;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    text-decoration: none;
+    margin-left: 0px;
   }
 }
