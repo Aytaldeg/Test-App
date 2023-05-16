@@ -3,6 +3,8 @@ import Sidebar from "../../Sidebar/Sidebar";
 import { FC, Fragment, useState } from "react";
 import Manager from "./Manager";
 import { NavLink } from "react-router-dom";
+import location from "../../Assets/location.png";
+import clock from "../../Assets/clock.png";
 
 const Jobs = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -32,10 +34,11 @@ const Jobs = () => {
                   </div>
                   <div className="jobs-info">
                     <div className="jobs-data">
-                      <img />
+                      <img src={location} />
                       Удаленно/Якутск, Петра Алексеева 17
                     </div>
                     <div className="jobs-data">
+                      <img src={clock} />
                       Полная занятость/Свободный график
                     </div>
                   </div>
@@ -59,10 +62,11 @@ const Jobs = () => {
                   </div>
                   <div className="jobs-info">
                     <div className="jobs-data">
-                      <img />
+                      <img src={location} />
                       Удаленно/Якутск, Петра Алексеева 17
                     </div>
                     <div className="jobs-data">
+                      <img src={clock} />
                       Полная занятость/Свободный график
                     </div>
                   </div>

@@ -48,6 +48,14 @@ function Contact() {
                       frameBorder="0"
                     ></iframe>
                   </div>
+                  <div className="contacts-mapm">
+                    <iframe
+                      src="https://yandex.ru/map-widget/v1/?um=constructor%3A64479069d182672f6b4222d0b165b19af5b687cff8ef2008a82dcee32b58f8ad&amp;source=constructor"
+                      width="300"
+                      height="300"
+                      frameBorder="0"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>

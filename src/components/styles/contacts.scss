@@ -44,6 +44,12 @@ $semibold_font: "Jost-SemiBold";
     top: 101px;
   }
 
+  @media (max-width: 360px) {
+    height: 810px;
+    position: relative;
+    top: 101px;
+  }
+
   @media (max-width: 1200px) {
     .wrapper {
       position: relative;
@@ -148,10 +154,112 @@ $semibold_font: "Jost-SemiBold";
         margin-top: 80px;
       }
 
+      &-mapm {
+        display: none;
+      }
+
       &-left {
         display: flex;
         flex-direction: column;
         gap: 80px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .contacts {
+      &-bg {
+        position: absolute;
+        background-color: #7b757d;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &-main {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        left: 0px;
+      }
+
+      &-active {
+        color: #0c97f9;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
+        left: 0px;
+      }
+
+      &-contents {
+        position: relative;
+        left: 0px;
+        margin-top: 40px;
+        position: relative;
+        left: 0px;
+      }
+
+      &-title {
+        text-align: start;
+        font-family: $font;
+        font-size: 48px;
+      }
+
+      &-contents {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+      }
+
+      &-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      &-place {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      &-name {
+        opacity: 0.5;
+        font-size: 14px;
+        font-family: $regular_font;
+      }
+
+      &-data {
+        color: #0c97f9;
+        font-size: 16px;
+        font-family: $regular_font;
+      }
+
+      &-map {
+        display: none;
+        margin-top: 80px;
+      }
+
+      &-mapm {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
     }
   }
@@ -249,5 +357,9 @@ $semibold_font: "Jost-SemiBold";
 
   &-map {
     margin-top: 80px;
+  }
+
+  &-mapm {
+    display: none;
   }
 }
