@@ -521,7 +521,7 @@ $regular_font: "Jost-Regular";
   }
 
   @media (max-width: 360px) {
-    height: 2760px;
+    height: 1860px;
     position: relative;
     top: 101px;
   }
@@ -750,7 +750,7 @@ $regular_font: "Jost-Regular";
       &-title {
         font-size: 20px;
         font-family: $font;
-        padding-top: 228px;
+        padding-top: 100px;
         text-transform: uppercase;
       }
 
@@ -787,6 +787,9 @@ $regular_font: "Jost-Regular";
       &-numbers {
         display: grid;
         justify-items: center;
+        gap: 40px;
+        position: relative;
+        right: 30px;
         &-button {
           font-family: $font;
           font-size: 16px;
@@ -794,12 +797,9 @@ $regular_font: "Jost-Regular";
           color: #fff;
           background-color: #0c97f9;
           border-radius: 47px;
-          padding: 10px 0px;
-          top: -220px;
-          left: 20px;
-          width: 260px;
           display: flex;
           justify-content: center;
+          margin-top: 30px;
         }
 
         &-buttontwo {
@@ -827,22 +827,26 @@ $regular_font: "Jost-Regular";
       &-num {
         position: relative;
         top: -300px;
+        margin-top: 100px;
+        left: 20px;
       }
 
       &-num2 {
         position: relative;
         top: -300px;
+        margin-top: 100px;
       }
 
       &-num3 {
         position: relative;
         top: -300px;
+        margin-top: 100px;
       }
 
       &-text {
         font-size: 20px;
         position: relative;
-        top: -220px;
+        top: -170px;
         margin-left: 28px;
         font-family: $regular_font;
         text-align: left;
@@ -865,7 +869,7 @@ $regular_font: "Jost-Regular";
       &-second {
         display: none;
         &-button {
-          margin-top: 300px;
+          margin-top: 400px;
           font-size: 16px;
         }
       }
@@ -924,7 +928,7 @@ $regular_font: "Jost-Regular";
       &-texttwo {
         font-size: 20px;
         position: relative;
-        top: -240px;
+        top: -200px;
         margin-left: 28px;
         font-family: $regular_font;
         text-align: left;
