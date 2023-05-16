@@ -17,7 +17,7 @@ function Partner() {
       <Statistics />
       <Provider />
       <FAQ />
-      {/* <Feedback /> */}
+      <Feedback />
     </div>
   );
 }

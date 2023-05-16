@@ -29,6 +29,13 @@ $regular_font: "Jost-Regular";
     background-color: #000000;
   }
 
+  @media (max-width: 360px) {
+    height: 624px;
+    position: relative;
+    top: 101px;
+    background-color: #000000;
+  }
+
   @media (max-width: 1200px) {
     .smain {
       &-bgImage {
@@ -60,6 +67,48 @@ $regular_font: "Jost-Regular";
       &-tplay {
         margin-top: 120px;
         margin-bottom: 500px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .smain {
+      &-bgImage {
+        position: absolute;
+        background-image: url("./../Assets/backgroundm.png");
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-size: 100% 100%;
+      }
+
+      &-ttitle {
+        padding-top: 140px;
+        font-size: 20px;
+        color: #fff;
+        font-family: $font;
+        text-transform: uppercase;
+      }
+
+      &-tsubtitle {
+        color: #bdbdbd;
+        font-size: 16px;
+        padding-top: 20px;
+        font-family: $font;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      &-tplay {
+        margin-bottom: 50px;
+      }
+
+      &-tplay img {
+        width: 30%;
+        position: relative;
+        bottom: 80px;
       }
     }
   }
@@ -119,7 +168,14 @@ $regular_font: "Jost-Regular";
     height: 1024px;
     position: relative;
     top: 101px;
+  }
 
+  @media (max-width: 360px) {
+    height: 624px;
+    position: relative;
+    top: 101px;
+  }
+  @media (max-width: 1200px) {
     .sstrategy {
       &-bg {
         font-family: $font;
@@ -138,6 +194,31 @@ $regular_font: "Jost-Regular";
         width: 996px;
         margin: auto;
         text-align: justify;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .sstrategy {
+      height: 624px;
+      position: relative;
+      top: 101px;
+
+      &-bg {
+        font-family: $font;
+        font-size: 54px;
+        color: #0c97f9;
+        opacity: 0.1;
+        margin-top: -100px;
+        line-height: 180px;
+      }
+
+      &-text {
+        position: relative;
+        font-family: $regular_font;
+        font-size: 16px;
+        text-align: justify;
+        width: 300px;
       }
     }
   }
@@ -1646,6 +1727,12 @@ $regular_font: "Jost-Regular";
     top: 101px;
   }
 
+  @media (max-width: 360px) {
+    height: 800px;
+    position: relative;
+    top: 101px;
+  }
+
   @media (max-width: 1200px) {
     .pfeedback {
       &-bg {
@@ -1751,6 +1838,121 @@ $regular_font: "Jost-Regular";
         border-radius: 32px;
         font-size: 20;
         line-height: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .pfeedback {
+      &-bg {
+        background-color: #7b757d;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 80px;
+        justify-content: center;
+      }
+
+      &-title {
+        font-size: 24px;
+        font-family: $font;
+        text-align: left;
+        padding-bottom: 0px;
+        position: relative;
+        width: 250px;
+        margin-right: 200px;
+      }
+
+      &-form {
+        width: 150px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+      }
+
+      &-input {
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 16px;
+        opacity: 0.5;
+        font-family: $regular_font;
+      }
+
+      &-fio {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 0px;
+      }
+
+      &-mail {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 0px;
+      }
+
+      &-company {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 0px;
+      }
+
+      &-link {
+        border-bottom: solid 1px #747373;
+        line-height: 3;
+        padding-left: 0px;
+      }
+
+      &-agreement {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        font-size: 24;
+        width: 310px;
+      }
+
+      &-dot {
+        width: 15px;
+        height: 10px;
+        background-color: #0c97f9;
+        border-radius: 50%;
+        position: relative;
+        border: 4px solid #ffffff;
+        outline: solid 1px #0c97f9;
+        margin-top: 10px;
+      }
+
+      &-text {
+        margin-left: 15px;
+        font-family: $regular_font;
+        font-size: 16px;
+      }
+
+      &-button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+        background-color: #0c97f9;
+        color: #fff;
+        border-radius: 32px;
+        font-size: 16;
+        line-height: 40px;
+        position: relative;
+        left: 0px;
+        width: 300px;
       }
     }
   }

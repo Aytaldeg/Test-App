@@ -14,12 +14,12 @@ function Store() {
     <div className="Store">
       <Main />
       <Strategy />
-      <Retaily />
+      {/* <Retaily />
       <Statistics />
       <Provider />
       <Download />
       <FAQ />
-      <Feedback />
+      <Feedback /> */}
     </div>
   );
 }
