@@ -24,7 +24,7 @@ function Provider() {
                   </div>
 
                   <div className="pprovider-first">
-                    <div className="pprovider-numbers">
+                    <div className="pprovider-numbers1">
                       <div className="pprovider-number">1</div>
                       <div className="pprovider-text">Заключение договора</div>
                       <div className="pprovider-numbers-button">

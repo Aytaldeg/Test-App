@@ -25,7 +25,7 @@ function Provider() {
                   </div>
 
                   <div className="pprovider-first">
-                    <div className="pprovider-numbers">
+                    <div className="pprovider-numbers1">
                       <div className="pprovider-number">1</div>
                       <div className="pprovider-text">
                         Зарегистрируйтесь на сайте или <br />
